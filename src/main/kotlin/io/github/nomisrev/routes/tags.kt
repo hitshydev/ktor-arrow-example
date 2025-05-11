@@ -4,7 +4,6 @@ package io.github.nomisrev.routes
 
 import io.github.nomisrev.repo.TagPersistence
 import io.ktor.resources.Resource
-import io.ktor.server.application.call
 import io.ktor.server.resources.get
 import io.ktor.server.response.respond
 import io.ktor.server.routing.Route
