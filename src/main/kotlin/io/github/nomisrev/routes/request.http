@@ -1,0 +1,38 @@
+###
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "janni",
+    "email": "info@janni.io",
+    "password": "12345678"
+  }
+}
+
+### Authorization by token
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+
+{
+  "user": {
+    "email": "info@janni.io",
+    "password": "12345678"
+  }
+}
+
+> {% client.global.set("auth_token", response.body.token); %}
+
+<> 2025-05-11T091425.200.json
+<> 2025-05-11T091419.200.json
+<> 2025-05-11T091415.200.json
+<> 2025-05-11T091104.200.json
+<> 2025-05-11T091056.200.json
+<> 2025-05-11T091021.200.json
+<> 2025-05-11T090838.200.json
+
+### Get Articles
+GET http://localhost:8080/api/articles/feed
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
