@@ -5,7 +5,7 @@ Content-Type: application/json
 {
   "user": {
     "username": "janni",
-    "email": "info@janni.io",
+    "email": "info@janni.de",
     "password": "12345678"
   }
 }
@@ -16,7 +16,7 @@ Content-Type: application/json
 
 {
   "user": {
-    "email": "info@janni.io",
+    "email": "info@janni.de",
     "password": "12345678"
   }
 }
